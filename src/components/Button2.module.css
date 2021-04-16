@@ -1,0 +1,22 @@
+.button2 {
+  display: inline-block;
+  cursor: pointer;
+  background: transparent;
+  color: rgba(61, 176, 153, 1);
+  outline: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 5px 20px;
+  box-shadow: 1px 1px 2px rgb(61, 176, 153);
+  border: 1px solid rgba(61, 176, 153, 1);
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+}
+
+.button2:hover,
+.button2:focus {
+  background: rgba(61, 176, 153, 1);
+  color: white;
+  box-shadow: 2px 2px 4px rgb(61, 176, 153);
+  text-shadow: 2px 2px 5px #2f8675;
+}
