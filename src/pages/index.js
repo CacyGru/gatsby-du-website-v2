@@ -6,6 +6,7 @@ import Seo from '../components/Seo';
 import '../style/Home.scss';
 import { FaDrum } from 'react-icons/fa';
 import { AiOutlineTeam } from 'react-icons/ai';
+import ButtonNeon from '../components/ButtonNeon';
 
 /* import CTAButton from '../components/CTAButton';
 import Button2 from '../components/Button2';
@@ -14,7 +15,7 @@ import ButtonLight from '../components/Buttonlight'; */
 const Home = () => {
   return (
     <Layout>
-      <div className="content">
+      <div className="content center">
         <Seo title="Home" description="andere beschreibung" />
         <h1>
           Du kannst gar nicht trommeln? <br></br>{' '}
@@ -23,6 +24,8 @@ const Home = () => {
             <span className="underline">Gegenteil!</span>
           </span>
         </h1>
+
+        <ButtonNeon to="/" text="kauf mich" />
 
         <div className="cards">
           <Link to="/unterricht" className="home">
@@ -57,19 +60,6 @@ const Home = () => {
               </div>
             </div>
           </Link>
-        </div>
-
-        <div className="card card-hover flex">
-          <div className="card-left">
-            <h2>Menu</h2>
-            <li>Punkt 1</li>
-            <li>Punkt 2</li>
-            <li>Punkt 3</li>
-            <li>Punkt 4</li>
-          </div>
-          <div className="card-right">
-            <h2>Card 3</h2>
-          </div>
         </div>
 
         <div className="card1">

@@ -8,6 +8,7 @@ import { BiHomeSmile } from 'react-icons/bi';
 import { FaDrum } from 'react-icons/fa';
 import { AiOutlineTeam, AiOutlineContacts } from 'react-icons/ai';
 import Logo from '../images/DrumUP_Logo.svg';
+import Testbutton from '../images/Testbutton.svg';
 
 const Header = () => {
   const dispatch = useContext(GlobalDispatchContext);
@@ -17,7 +18,7 @@ const Header = () => {
   };
 
   return (
-    <header className="card header">
+    <header className="header">
       <Link to="/">
         <img width="100px" src={Logo} alt="Logo" />
       </Link>
@@ -45,6 +46,10 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+
+      <Link to="/">
+        <img className="testbutton" src={Testbutton} alt="Logo" />
+      </Link>
 
       <VscColorMode
         className="dm-switch"

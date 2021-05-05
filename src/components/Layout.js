@@ -10,16 +10,17 @@ const Layout = (props) => {
   return (
     <div className={state.theme}>
       <div className="bg">
-        <div className="container card">
-          <div className="content center">
-            <Header />
-
-            {props.children}
-          </div>
-
-          <ScrollButton />
-          <Footer />
+        <div className="header-container">
+          <Header />
         </div>
+        <div className="container">
+          <div className="card">
+            <div className="content center">{props.children}</div>
+
+            <ScrollButton />
+          </div>
+        </div>
+        <Footer />
       </div>
     </div>
   );

@@ -1,13 +1,22 @@
 @use './colors' as *;
 
+.card .header {
+  width: 100%;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 2rem;
-  padding: 1rem;
-  border-radius: 1rem;
   position: relative;
+
+  .testbutton {
+    width: 100px;
+  }
 
   nav a::after {
     content: '';
@@ -34,7 +43,7 @@
   nav li {
     padding: 10px;
     margin: 0 5px;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 
   /* nav a {
