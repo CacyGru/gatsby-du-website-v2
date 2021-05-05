@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
+import Unterricht1 from '../components/Unterricht1';
+import Unterricht2 from '../components/Unterricht2';
+import Unterricht3 from '../components/Unterricht3';
 
 const Unterricht = () => {
+  const [state, setState] = useState(<Unterricht1 />);
+  const stateChange = () => {
+    setState(<Unterricht1 />);
+  };
+  const stateChange2 = () => {
+    setState(<Unterricht2 />);
+  };
+  const stateChange3 = () => {
+    setState(<Unterricht3 />);
+  };
+
   return (
     <Layout>
       <Seo title="Unterricht" />
@@ -11,32 +25,22 @@ const Unterricht = () => {
         <div className="card-left">
           <h2>Menu</h2>
           <nav>
-            <li>Punkt 1</li>
-            <li>Punkt 2</li>
-            <li>Punkt 3</li>
-            <li>Punkt 4</li>
+            <li>
+              <button onClick={stateChange}>Punkt 1</button>{' '}
+            </li>
+
+            <li>
+              <button onClick={stateChange2}>Punkt 2</button>{' '}
+            </li>
+            <li>
+              <button onClick={stateChange3}>Punkt 3</button>{' '}
+            </li>
           </nav>
         </div>
         <div className="card-right">
           <h2>Unterricht</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo commodi
-            sed corporis voluptatum, voluptatibus optio! Ratione, reiciendis
-            soluta sed dolor, numquam repudiandae veniam blanditiis minima,
-            culpa neque tempore! Veritatis, pariatur?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo commodi
-            sed corporis voluptatum, voluptatibus optio! Ratione, reiciendis
-            soluta sed dolor, numquam repudiandae veniam blanditiis minima,
-            culpa neque tempore! Veritatis, pariatur?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo commodi
-            sed corporis voluptatum, voluptatibus optio! Ratione, reiciendis
-            soluta sed dolor, numquam repudiandae veniam blanditiis minima,
-            culpa neque tempore! Veritatis, pariatur?
-          </p>
+
+          <div>{state}</div>
         </div>
       </div>
     </Layout>
