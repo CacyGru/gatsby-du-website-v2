@@ -1,25 +1,22 @@
 @use "./colors" as *;
 
 h1 {
-  margin: 2rem 0;
-  line-height: 4rem;
-  //text-transform: uppercase;
+  margin: 0 0 2rem 0;
+  font-size: 1.5rem;
+
+  text-transform: uppercase;
   //color: $color-complement-0;
 
   .h1Plus {
-    font-size: 2.5rem;
-    background-image: linear-gradient(
-      to right,
-      #cedbe9 0%,
-      #aac5de 17%,
-      #6199c7 50%,
-      #3a84c4 51%,
-      #419ad6 59%,
-      #26558b 100%
-    );
+    font-size: 2rem;
+    color: #3eb099;
+    /* background: -webkit-linear-gradient(right, #3eb099, #57e2c6);
+    background: -moz-linear-gradient(right, #3eb099, #57e2c6);
+    background: linear-gradient(to left, #3eb099, #57e2c6);
+    z-index: 2;
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
 
     /*  background-image: -webkit-linear-gradient(
       to right,
@@ -45,6 +42,15 @@ h1 {
   }
 }
 
+h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+p {
+  margin: 1rem 0;
+}
+
 blockquote {
   &::before {
     content: open-quote;
@@ -64,7 +70,6 @@ blockquote {
   gap: 2rem;
   align-items: flex-start;
   justify-content: space-between;
-  margin: 6rem 0;
 }
 
 .home {

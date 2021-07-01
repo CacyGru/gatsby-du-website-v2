@@ -1,0 +1,44 @@
+.teamtraining {
+  .sax {
+    display: flex;
+  }
+
+  .sax_img {
+    height: 80px;
+    width: 90px;
+    margin-top: 5rem;
+    padding-left: 20px;
+    border: red solid 2px;
+  }
+
+  .frei_img {
+    height: 2rem;
+    margin-top: 15rem;
+  }
+
+  #was .bass {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+  }
+
+  #was .bass_img {
+    height: 200px;
+  }
+
+  #was .right2 {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  #wie .left5 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 50px;
+  }
+
+  .drumup {
+    color: #d42b00;
+  }
+}

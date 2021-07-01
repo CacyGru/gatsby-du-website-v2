@@ -20,26 +20,33 @@ const Unterricht = () => {
 
   return (
     <Layout>
-      <Seo title="Unterricht" />
+      <Seo
+        title="Unterricht"
+        description="Schlagzeugunterricht in Mönchengladbach in der RedBox. Geeignet für alle Altersklassen und Level. Es sind keine Vorkenntnisse erforderlich"
+      />
       <div className=" flex">
         <div className="card-left">
-          <h2>Menu</h2>
+          <h2>Unterricht</h2>
           <nav>
             <li>
-              <button onClick={stateChange}>Punkt 1</button>{' '}
+              <button className="btn-sideNav" onClick={stateChange}>
+                Unterricht
+              </button>{' '}
             </li>
 
             <li>
-              <button onClick={stateChange2}>Punkt 2</button>{' '}
+              <button className="btn-sideNav" onClick={stateChange2}>
+                Blog
+              </button>{' '}
             </li>
             <li>
-              <button onClick={stateChange3}>Punkt 3</button>{' '}
+              <button className="btn-sideNav" onClick={stateChange3}>
+                Online
+              </button>{' '}
             </li>
           </nav>
         </div>
         <div className="card-right">
-          <h2>Unterricht</h2>
-
           <div>{state}</div>
         </div>
       </div>

@@ -2,7 +2,19 @@
 
 .light {
   .bg {
-    background-image: url(../images/2.png);
+    background-image: url(../images/BGCG.jpg);
+  }
+
+  .header {
+    background: $primary-green;
+    nav a::after {
+      background: $accent;
+    }
+    .dm-switch {
+      &:hover {
+        color: $accent;
+      }
+    }
   }
 
   .card {
@@ -45,5 +57,11 @@
   .card__back {
     color: $primary-green;
     background: rgba(222, 222, 222, 1);
+  }
+
+  footer {
+    a:hover {
+      color: $primary-green;
+    }
   }
 }

@@ -1,0 +1,203 @@
+@use "./colors" as *;
+
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 90vw;
+  }
+
+  .header {
+    justify-content: flex-start;
+  }
+
+  .nav {
+    display: none !important;
+  }
+
+  .menu-bars {
+    display: block !important;
+    font-size: 2rem;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .mobileNav {
+    z-index: 999;
+    width: 95%;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    nav ul {
+      flex-direction: column;
+    }
+
+    .nav-menu {
+      width: 250px;
+      height: 100vh;
+      background: black;
+      display: flex;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      transition: 850ms;
+    }
+
+    .nav-menu.active {
+      left: 0;
+      transition: 350ms;
+    }
+
+    .nav-menu-items {
+      width: 100%;
+    }
+
+    .navbar-toggle {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+
+    span {
+      margin-left: 16px;
+    }
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .home {
+      width: 100%;
+    }
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    line-height: 1.9rem;
+    padding-top: 0 !important;
+  }
+
+  .card-top {
+    width: 80vw !important;
+  }
+
+  .card-content {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-left {
+    align-items: center;
+
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 2rem;
+    width: 90vw;
+    padding: 1rem !important;
+
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+  .card-left nav {
+    display: flex;
+    flex-direction: row;
+    li {
+      padding: 0.3rem;
+    }
+  }
+
+  .card-right {
+    width: 90vw;
+    padding: 1.2rem !important;
+  }
+
+  .frei_img,
+  .bass_img,
+  .sax_img {
+    display: none;
+  }
+
+  .teamtraining .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .impressum {
+    padding: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .dark .bg {
+    background: $text;
+  }
+
+  .light .bg {
+    background: white;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    width: 280px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header,
+  a {
+    font-size: 1.1rem;
+  }
+
+  .card {
+    font-size: 1rem !important;
+    line-height: 1.6rem !important;
+    letter-spacing: 1px !important;
+
+    .h1Plus {
+      font-size: 1.2rem;
+    }
+    h1 {
+      font-size: 1.1rem;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .header,
+  a {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    font-size: 1rem !important;
+    line-height: 1.2rem !important;
+    letter-spacing: 1px !important;
+
+    .h1Plus {
+      font-size: 1rem;
+    }
+    h1 {
+      font-size: 1.1rem;
+    }
+    .btn-sideNav {
+      font-size: 0.8rem;
+    }
+  }
+}

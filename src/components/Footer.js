@@ -7,9 +7,9 @@ const Footer = () => {
 
   return (
     <footer>
-      © <Link to="/"> Drum Up</Link> {Year} |{' '}
-      <Link to="/datenschutz">Datenschutz</Link> |{' '}
-      <Link to="/impressum">Impressum</Link>
+      <Link to="/"> © Drum Up {Year} </Link>
+      <Link to="/datenschutz">| Datenschutz </Link>{' '}
+      <Link to="/impressum">| Impressum </Link>
     </footer>
   );
 };

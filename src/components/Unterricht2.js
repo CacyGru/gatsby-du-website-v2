@@ -3,10 +3,10 @@ import React from 'react';
 const Unterricht2 = () => {
   return (
     <div className="">
-      <p>
-        Unterricht 2 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Unde, magni?
-      </p>
+      <h2>Blog</h2>
+      <div>
+        <p>Hier entsteht in kürze der DrumUP Blog</p>
+      </div>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 :root {
-  --clr-neon: hsl(111 100% 54%);
+  --clr-neon: hsla(12, 100%, 42%, 1);
   --clr-bg: hsl(323 21% 16%);
 }
 
@@ -12,6 +12,7 @@
   border: var(--clr-neon) 0.125em solid;
   border-radius: 0.5em;
   padding: 0.2em 0.8em;
+  margin-bottom: 6rem;
   text-transform: uppercase;
   letter-spacing: 1.2;
   /* text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.25em currentColor; */

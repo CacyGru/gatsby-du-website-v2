@@ -1,18 +1,14 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import emailjs from 'emailjs-com';
 import TextError from './TextError';
 import '../style/Form.scss';
-import Button2 from './Button2';
 
 const initialValues = {
   name: '',
   email: '',
   nachricht: '',
-};
-
-const onSubmit = (values) => {
-  console.log(values);
 };
 
 // Yup
@@ -24,6 +20,31 @@ const validationSchema = Yup.object({
   nachricht: Yup.string().required('Pflichfeld'),
 });
 
+//emailjs
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      'service_kgkqz75',
+      'template_g5bnfrv',
+      e.target,
+      'user_DHGvJhRwh5YlWYImKVwqN'
+    )
+    .then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  e.target.reset();
+};
+
+const onSubmit = { sendEmail };
+
 const contactForm = () => {
   return (
     <Formik
@@ -31,7 +52,7 @@ const contactForm = () => {
       validationSchema={validationSchema}
       onSubmit={onSubmit}
     >
-      <Form>
+      <Form onSubmit={sendEmail}>
         <div className="form-control">
           <label htmlFor="name">
             Name<sup>*</sup>
@@ -58,7 +79,9 @@ const contactForm = () => {
           </div>
         </div>
 
-        <Button2 text="Senden" type="submit" />
+        <button className="btn-sideNav" type="submit">
+          Senden{' '}
+        </button>
       </Form>
     </Formik>
   );

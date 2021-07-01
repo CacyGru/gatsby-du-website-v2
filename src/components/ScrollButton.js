@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { BiUpArrowCircle } from 'react-icons/bi';
 import { Button } from './ScrollButtonStyles';
 
+const isBrowser = typeof window !== 'undefined';
+
 const ScrollButton = () => {
   const [visible, setVisible] = useState(false);
 
@@ -23,7 +25,9 @@ const ScrollButton = () => {
     });
   };
 
-  window.addEventListener('scroll', toggleVisible);
+  if (isBrowser) {
+    window.addEventListener('scroll', toggleVisible);
+  }
 
   return (
     <Button>
