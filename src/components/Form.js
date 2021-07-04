@@ -27,10 +27,10 @@ const sendEmail = (e) => {
 
   emailjs
     .sendForm(
-      'service_kgkqz75',
-      'template_g5bnfrv',
+      process.env.GATSBY_EMAILJS_SERVICE,
+      process.env.GATSBY_EMAILJS_TEMPLATE,
       e.target,
-      'user_DHGvJhRwh5YlWYImKVwqN'
+      process.env.GATSBY_EMAILJS_USER
     )
     .then(
       (result) => {

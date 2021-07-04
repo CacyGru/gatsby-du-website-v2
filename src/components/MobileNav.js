@@ -21,6 +21,7 @@ function MobileNav() {
       <Link to="#" className="menu-bars">
         <FaBars className="nav-bars" onClick={showSidebar} />
       </Link>
+      <h2>Drum UP</h2>
       <Link to="/">
         <img width="100px" src={Logo} alt="Logo" className="logo" />
       </Link>

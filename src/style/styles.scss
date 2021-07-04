@@ -73,8 +73,20 @@ body {
   //transition: transform 0.3s ease;
   margin: 2rem 0;
 
+  figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .picture {
     border-radius: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -159,14 +171,42 @@ body {
 .card-content {
   padding: 0;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 
   p {
     margin-bottom: 1rem;
+    text-align: justify;
   }
 }
 
 .datenschutz .card-content {
   flex-direction: column;
+}
+
+.preise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h4 {
+    margin: 1rem 0;
+  }
+  table {
+    td {
+      border-bottom: 1px solid black;
+      padding: 1rem 0;
+      text-align: center;
+      padding: 0.4rem;
+    }
+    tr:hover {
+      background-color: #dad9d9;
+    }
+  }
+}
+
+.topel {
+  font-size: 0.6rem;
 }
 
 li {

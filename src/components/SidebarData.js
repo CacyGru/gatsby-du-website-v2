@@ -6,7 +6,7 @@ import * as AiOutline from 'react-icons/ai';
 
 export const SidebarData = [
   {
-    title: 'Start',
+    title: 'Drum UP',
     path: '/',
     icon: <BoxIcons.BiHomeSmile />,
     className: 'startLink',

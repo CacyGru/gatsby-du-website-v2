@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import AGBs from '../assets/AGBs_DrumUpUnterricht.pdf';
-import Preisliste from '../assets/Preisliste_DrumUpUnterricht.pdf';
 
 const Unterricht1 = () => {
   return (
@@ -37,10 +35,6 @@ const Unterricht1 = () => {
         <Link className="btn-sideNav" to="/kontakt">
           Probiere es aus bei einer kostenlosen Probestunde!
         </Link>
-
-        <a href={Preisliste}> Preisliste</a>
-
-        <a href={AGBs}> AGBs</a>
       </div>
     </div>
   );

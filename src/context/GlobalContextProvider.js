@@ -1,6 +1,10 @@
 import React, { useReducer, createContext, useEffect } from 'react';
 import storage from 'local-storage-fallback';
 
+const initialState = {
+  theme: storage.getItem('theme') ? storage.getItem('theme') : 'light',
+};
+
 //Reducer
 
 const reducer = (state, action) => {
@@ -13,10 +17,6 @@ const reducer = (state, action) => {
     default:
       return state.theme;
   }
-};
-
-const initialState = {
-  theme: storage.getItem('theme') ? storage.getItem('theme') : 'light',
 };
 
 //Context

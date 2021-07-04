@@ -65,6 +65,22 @@ blockquote {
 }
 
 .cards {
+  width: 95%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.card-start {
+  display: flex;
+  flex-direction: column;
+
+  .card-content {
+    flex-grow: 1;
+  }
+}
+
+/* .cards {
   width: 100%;
   display: flex;
   gap: 2rem;
@@ -75,3 +91,4 @@ blockquote {
 .home {
   width: 50%;
 }
+ */

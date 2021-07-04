@@ -17,6 +17,7 @@ const Header = () => {
   return (
     <header className="header">
       <MobileNav />
+
       <div className="nav">
         <Link to="/">
           <img width="100px" src={Logo} alt="Logo" className="logo" />
