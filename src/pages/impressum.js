@@ -13,14 +13,14 @@ const Impressum = () => {
         </div>
         <div className="card-content">
           <p>
-            <span class="bold">
-              <span class="drumup"> Drum UP</span> – Carsten Grüter
+            <span className="bold">
+              <span className="drumup"> Drum UP</span> – Carsten Grüter
             </span>
             <br />
             Ruhrtalstraße 28 <br />
             40233 Düsseldorf
             <br />
-            <span class="drumup"> T</span> 0170 282 49 29
+            <span className="drumup"> T</span> 0170 282 49 29
           </p>
         </div>
       </div>

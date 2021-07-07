@@ -81,17 +81,29 @@
 
   .card {
     line-height: 1.9rem;
-    padding-top: 0 !important;
+    padding: 0 !important;
   }
 
-  /* .card-top {
-    width: 80vw !important;
-  } */
+  .card-start {
+    align-items: center;
+  }
+
+  .card-start .btn-sideNav {
+    margin: 1.2rem;
+    width: 80%;
+  }
+
+  .card-top {
+    width: 90vw !important;
+  }
 
   .card-content {
     display: flex;
+    flex-grow: 0;
     align-items: center;
     justify-content: center;
+
+    padding: 1.2rem !important;
   }
 
   .card-left {
@@ -109,21 +121,49 @@
   .card-left nav {
     display: flex;
     flex-direction: row;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     li {
-      padding: 0.3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn-sideNav {
+      padding: 5px 25px;
     }
   }
 
   .card-right {
-    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     padding: 1.2rem !important;
+
+    .btn-sideNav {
+      width: 100%;
+    }
   }
 
-  .frei_img,
-  .bass_img,
-  .sax_img {
-    display: none;
+  .teamtraining {
+    .frei_img,
+    .bass_img,
+    .sax_img {
+      display: none;
+    }
+
+    .img {
+      margin: 0;
+    }
+
+    .trumpet_img {
+      margin-top: 1rem;
+    }
   }
 
   .teamtraining .container {
@@ -154,7 +194,7 @@
   .unterricht .btn-sideNav {
     font-size: 1rem;
     margin: 4px 0;
-    padding: 4px 10px;
+    padding: 5px 20px;
   }
 
   footer {
@@ -182,7 +222,15 @@
       font-size: 1.1rem;
     }
   }
+
+  .card-left nav {
+    .btn-sideNav {
+      font-size: 0.8rem;
+      padding: 3px 14px;
+    }
+  }
 }
+
 @media screen and (max-width: 400px) {
   .header,
   a {
@@ -200,8 +248,16 @@
     h1 {
       font-size: 1.1rem;
     }
+  }
+
+  .card-left nav li {
+    padding: 0;
+  }
+
+  .card-left nav {
     .btn-sideNav {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
+      padding: 3px 12px;
     }
   }
 }

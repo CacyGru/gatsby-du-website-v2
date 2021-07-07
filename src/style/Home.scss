@@ -65,19 +65,25 @@ blockquote {
 }
 
 .cards {
-  width: 95%;
+  width: 96%;
   display: grid;
   gap: 1rem;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 32% 32% 32%;
 }
 
 .card-start {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   .card-content {
     flex-grow: 1;
   }
+}
+
+.btn-sideNav {
+  width: 80%;
+  margin-bottom: 1rem;
 }
 
 /* .cards {

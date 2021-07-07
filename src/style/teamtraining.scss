@@ -1,29 +1,42 @@
 .teamtraining {
+  h2 {
+    font-size: 1.3rem;
+  }
+  .card-right {
+    text-align: left;
+  }
+  h3 {
+    margin: 2rem 0;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+  .img {
+    margin-bottom: 6rem;
+  }
   .sax {
     display: flex;
   }
 
   .sax_img {
-    height: 80px;
     width: 90px;
     margin-top: 5rem;
-    padding-left: 20px;
-    border: red solid 2px;
   }
 
   .frei_img {
-    height: 2rem;
-    margin-top: 15rem;
+    height: 6rem;
+    margin-top: 18rem;
   }
 
-  #was .bass {
+  /*  #was .bass {
     display: flex;
     justify-content: flex-end;
     padding-right: 30px;
-  }
+  } */
 
-  #was .bass_img {
-    height: 200px;
+  .bass_img {
+    width: 80px;
   }
 
   #was .right2 {

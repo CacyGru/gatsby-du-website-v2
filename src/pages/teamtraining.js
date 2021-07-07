@@ -8,6 +8,7 @@ import Sax from '../images/sax.svg';
 import Bass from '../images/bass.svg';
 import Trompete from '../images/trumpet.svg';
 import Ausrufe from '../images/Ausrufe.svg';
+import { AiOutlineTeam } from 'react-icons/ai';
 
 const Teamtraining = () => {
   return (
@@ -17,16 +18,18 @@ const Teamtraining = () => {
         description="Drum UP Teamtraining nutzt Energie und gruppendynamische Prozesse einer (Trommel)Band, um mit Mitarbeitern, Kunden, Gästen, Kindern, Schülern oder Vereinsmitgliedern ein kraftvolles Erlebnis zu erschaffen."
       />
 
-      <div className="flex">
+      <div className="flex teamtraining">
         <div className="card-left">
-          <h1>Teamtraining</h1>
-          <div className="sax">
+          <h2>
+            <AiOutlineTeam /> Teamtraining
+          </h2>
+          <div className="sax img">
             <img src={Sax} className="sax_img" alt="Saxophon Spieler" />
           </div>
-          <div className="bass">
+          <div className="bass img">
             <img src={Bass} className="bass_img" alt="Kontrabass Spieler" />
           </div>
-          <div className="frei_img">
+          <div className="frei img">
             <img
               className="frei_img"
               src={Ausrufe}
@@ -54,17 +57,15 @@ const Teamtraining = () => {
           </p>
 
           <div className="flex">
-            <div className="left2">
+            <div>
               <ul>
-                <li className="litt">
+                <li>
                   als lebendiger Abschluss, etwa an einen langen Seminartag
                 </li>
-                <li className="litt">als spannendes Kick Off Event,</li>
-                <li className="litt">
-                  als zeitlich variables Training in Unternehmen
-                </li>
-                <li className="litt">als Schulprojekt</li>
-                <li className="litt">
+                <li>als spannendes Kick Off Event,</li>
+                <li>als zeitlich variables Training in Unternehmen</li>
+                <li>als Schulprojekt</li>
+                <li>
                   oder einfach als spaßiges, aktives Element, zum Beispiel bei
                   einer Weihnachtsfeier oder einem Geburtstag.
                 </li>
@@ -79,7 +80,7 @@ const Teamtraining = () => {
               />
             </div>
           </div>
-          <div className="right right4">
+          <div className="right">
             <div className="content">
               <h3>Wie funktioniert Drum UP Teamtraining</h3>
               <p>
@@ -103,15 +104,15 @@ const Teamtraining = () => {
                 Drum Up Teamtrainings fördern Teamfähigkeiten / Soft Skills wie
               </p>
               <ul>
-                <li className="litt">Kreativität</li>
-                <li className="litt">
+                <li>Kreativität</li>
+                <li>
                   Kommunikative Kompetenz – zuhören, miteinander kommunizieren
                 </li>
-                <li className="litt">
+                <li>
                   Empathie – seine Rolle finden, dem anderen Raum lassen,
                   individuelle Stärken förden
                 </li>
-                <li className="litt">Produktivität</li>
+                <li>Produktivität</li>
               </ul>
 
               <p>

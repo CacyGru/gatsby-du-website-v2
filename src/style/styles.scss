@@ -52,7 +52,7 @@ body {
 
 .content {
   flex-grow: 1;
-  margin-bottom: 2rem;
+  //margin-bottom: 2rem;
 }
 
 .center {
@@ -64,7 +64,6 @@ body {
 //card styling
 
 .card {
-  padding: 1rem;
   font-size: 1.1rem;
   line-height: 1.8rem;
   letter-spacing: 1.4px;
@@ -72,6 +71,7 @@ body {
   border-radius: 2rem;
   //transition: transform 0.3s ease;
   margin: 2rem 0;
+  min-height: auto;
 
   figure {
     display: flex;
@@ -121,8 +121,44 @@ body {
   }
 }
 
+.card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  padding: 2rem;
+}
+
+.card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 4;
+  padding: 2rem;
+  h1 {
+    text-align: center;
+  }
+}
+
+.card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  p {
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+}
+
 .btn-sideNav {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   width: 100%;
   cursor: pointer;
@@ -149,36 +185,14 @@ body {
 .flex {
   display: flex;
 }
-
-.card-left {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  flex: 1;
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
-  padding: 2rem;
-}
-
-.card-right {
-  flex: 4;
-  padding: 2rem;
-  h1 {
-    text-align: center;
-  }
-}
-
-.card-content {
-  padding: 0;
+.flex-column {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+}
 
-  p {
-    margin-bottom: 1rem;
-    text-align: justify;
-  }
+.padding {
+  padding: 2rem;
 }
 
 .datenschutz .card-content {

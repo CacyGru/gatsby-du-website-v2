@@ -7,6 +7,7 @@ import Blog from '../components/Blog';
 import AGBs from '../components/AGBs';
 import Preise from '../components/Preise';
 import OnlineUnterricht from '../components/OnlineUnterricht';
+import { FaDrum } from 'react-icons/fa';
 
 const Unterricht = () => {
   const [state, setState] = useState(<Unterricht1 />);
@@ -32,36 +33,39 @@ const Unterricht = () => {
         title="Unterricht"
         description="Schlagzeugunterricht in Mönchengladbach in der RedBox. Geeignet für alle Altersklassen und Level. Es sind keine Vorkenntnisse erforderlich"
       />
-      <div className=" flex unterricht">
+      <div className="flex unterricht">
         <div className="card-left">
-          <h2>Unterricht</h2>
+          <h2>
+            <FaDrum /> Unterricht
+          </h2>
           <nav>
-            <li>
-              <button className="btn-sideNav" onClick={stateChange}>
-                Unterricht
-              </button>{' '}
-            </li>
-
-            <li>
-              <button className="btn-sideNav" onClick={stateChange2}>
-                Blog
-              </button>{' '}
-            </li>
-            <li>
-              <button className="btn-sideNav" onClick={stateChange3}>
-                Online
-              </button>{' '}
-            </li>
-            <li>
-              <button className="btn-sideNav" onClick={stateChange4}>
-                Preise
-              </button>{' '}
-            </li>
-            <li>
-              <button className="btn-sideNav" onClick={stateChange5}>
-                AGBs
-              </button>{' '}
-            </li>
+            <ul>
+              <li>
+                <button className="btn-sideNav" onClick={stateChange}>
+                  Unterricht
+                </button>{' '}
+              </li>
+              <li>
+                <button className="btn-sideNav" onClick={stateChange2}>
+                  Blog
+                </button>{' '}
+              </li>
+              <li>
+                <button className="btn-sideNav" onClick={stateChange3}>
+                  Online
+                </button>{' '}
+              </li>
+              <li>
+                <button className="btn-sideNav" onClick={stateChange4}>
+                  Preise
+                </button>{' '}
+              </li>
+              <li>
+                <button className="btn-sideNav" onClick={stateChange5}>
+                  AGBs
+                </button>{' '}
+              </li>
+            </ul>
           </nav>
         </div>
         <div className="card-right">

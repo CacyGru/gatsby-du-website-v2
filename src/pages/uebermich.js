@@ -5,14 +5,20 @@ import '../style/uebermich.scss';
 import cgdesktop from '../images/carsten-grüter-desktop.jpg';
 import cgmobile from '../images/carsten-grüter-mobile.jpg';
 import cg from '../images/cg.png';
+import { BsFileRichtext } from 'react-icons/bs';
 
 const Uebermich = () => {
   return (
     <Layout>
       <Seo title="Über mich" />
 
-      <div>
-        <div className="card">
+      <div className="flex-column">
+        <div className="card-top">
+          <h2>
+            <BsFileRichtext /> Über Mich
+          </h2>
+        </div>
+        <div className="card card-content">
           <figure>
             <picture>
               <source srcSet={cgmobile} media="(max-width: 768px)" />
@@ -48,44 +54,45 @@ const Uebermich = () => {
             <span className="drumup">|</span>
           </p>
         </div>
-      </div>
-      <div>
-        <div className="bio">
-          <div className="flexBio">
-            <div className="datumll">Seit 1999</div>
-            <div className="inhaltll">Dozent für Drums und Percussion</div>
-          </div>
 
-          <div className="flexBio">
-            <div className="datumll">Seit 2013</div>
-            <div className="inhaltll">
-              Leiter Sambaband »Somedrums« mit Auftritten im In- und Ausland
+        <div>
+          <div className="bio padding">
+            <div className="flexBio">
+              <div className="datumll">Seit 1999</div>
+              <div className="inhaltll">Dozent für Drums und Percussion</div>
+            </div>
+
+            <div className="flexBio">
+              <div className="datumll">Seit 2013</div>
+              <div className="inhaltll">
+                Leiter Sambaband »Somedrums« mit Auftritten im In- und Ausland
+              </div>
+            </div>
+
+            <div className="flexBio">
+              <div className="datumll">Seit 2015</div>
+              <div className="inhaltll">
+                Teamtrainings Porsche, Mercedes, Equitana, Mars, u.v.a.{' '}
+              </div>
+            </div>
+
+            <div className="flexBio">
+              <div className="datumll">Seit 2016</div>
+              <div className="inhaltll">
+                Kultur und Schule Projekte an Grundschulen
+              </div>
             </div>
           </div>
 
-          <div className="flexBio">
-            <div className="datumll">Seit 2015</div>
-            <div className="inhaltll">
-              Teamtrainings Porsche, Mercedes, Equitana, Mars, u.v.a.{' '}
-            </div>
+          <div className="center bio padding">
+            <h3>Fortbildung</h3>
+            <p>Klangschalen Massage, Peter Hess Institut, 2017 </p>
+            <p> Zertifizierter Audio Engineer Hofa Studios, 2008</p>
+            <h3>Studium</h3>{' '}
+            <p>Schlagzeug, Hoogeschool vor de Kunsten, Arnheim,1999 - 2002</p>
+            <h3>Schule</h3>
+            <p> Abitur, Gymnasium Neuwerk, Mönchengladbach, 1997</p>
           </div>
-
-          <div className="flexBio">
-            <div className="datumll">Seit 2016</div>
-            <div className="inhaltll">
-              Kultur und Schule Projekte an Grundschulen
-            </div>
-          </div>
-        </div>
-
-        <div className="center bio">
-          <h3>Fortbildung</h3>
-          <p>Klangschalen Massage, Peter Hess Institut, 2017 </p>
-          <p> Zertifizierter Audio Engineer Hofa Studios, 2008</p>
-          <h3>Studium</h3>{' '}
-          <p>Schlagzeug, Hoogeschool vor de Kunsten, Arnheim,1999 - 2002</p>
-          <h3>Schule</h3>
-          <p> Abitur, Gymnasium Neuwerk, Mönchengladbach, 1997</p>
         </div>
       </div>
     </Layout>

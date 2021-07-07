@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 const Unterricht1 = () => {
   return (
-    <div>
+    <div className="flex-column">
       <h1>Drum UP Schlagzeugunterricht</h1>
       <div>
         <h3>
