@@ -9,7 +9,7 @@ import Preise from '../components/Preise';
 import OnlineUnterricht from '../components/OnlineUnterricht';
 import { FaDrum } from 'react-icons/fa';
 
-const Unterricht = () => {
+const Unterricht = (props) => {
   const [state, setState] = useState(<Unterricht1 />);
   const stateChange = () => {
     setState(<Unterricht1 />);
@@ -33,7 +33,7 @@ const Unterricht = () => {
         title="Unterricht"
         description="Schlagzeugunterricht in Mönchengladbach in der RedBox. Geeignet für alle Altersklassen und Level. Es sind keine Vorkenntnisse erforderlich"
       />
-      <div className="flex unterricht">
+      <div className="flex">
         <div className="card-left">
           <h2>
             <FaDrum /> Unterricht

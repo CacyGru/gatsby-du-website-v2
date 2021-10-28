@@ -7,6 +7,7 @@ import '../style/Home.scss';
 import { FaDrum, FaMusic } from 'react-icons/fa';
 import { AiOutlineTeam } from 'react-icons/ai';
 import { BsFileRichtext } from 'react-icons/bs';
+import { RiTapeLine } from 'react-icons/ri';
 import cgdesktop from '../images/carsten-grüter-desktop.jpg';
 import cgmobile from '../images/carsten-grüter-mobile.jpg';
 import cg from '../images/cg.png';
@@ -51,7 +52,7 @@ const Home = () => {
             </div>
           </div>
           <Link to="/unterricht" className="btn-sideNav">
-            zum Angebot ...
+            zum Angebot
           </Link>
         </div>
 
@@ -73,7 +74,7 @@ const Home = () => {
             </p>
           </div>
           <Link to="/teamtraining" className="btn-sideNav">
-            probiere es aus ...
+            probiere es aus
           </Link>
         </div>
 
@@ -110,7 +111,7 @@ const Home = () => {
             <p>Wer ist eigentlich Drum Up?</p>
           </div>
           <Link to="/uebermich" className="btn-sideNav">
-            über mich ...
+            über mich
           </Link>
         </div>
 
@@ -124,7 +125,21 @@ const Home = () => {
             <p>Drum UP macht auch aktiv Musik.</p>
           </div>
           <Link to="/music" className="btn-sideNav">
-            zur Musik ...
+            zur Musik
+          </Link>
+        </div>
+
+        <div className="card card-start">
+          <div className="card-top">
+            <h2>
+              <RiTapeLine /> Recording
+            </h2>
+          </div>
+          <div className="card-content">
+            <p>Musik für die Ewigkeit - Drum UP Recording und Produktion</p>
+          </div>
+          <Link to="/recording" className="btn-sideNav">
+            zum Angebot
           </Link>
         </div>
       </div>

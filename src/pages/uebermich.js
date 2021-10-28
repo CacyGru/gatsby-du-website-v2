@@ -12,7 +12,7 @@ const Uebermich = () => {
     <Layout>
       <Seo title="Über mich" />
 
-      <div className="flex-column">
+      <div className="center">
         <div className="card-top">
           <h2>
             <BsFileRichtext /> Über Mich

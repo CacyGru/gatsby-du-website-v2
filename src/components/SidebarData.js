@@ -3,6 +3,7 @@ import * as BoxIcons from 'react-icons/bi';
 import * as BootStrap from 'react-icons/bs';
 import * as FontAwesome from 'react-icons/fa';
 import * as AiOutline from 'react-icons/ai';
+import * as RemixIcon from 'react-icons/ri';
 
 export const SidebarData = [
   {
@@ -22,6 +23,12 @@ export const SidebarData = [
     path: '/teamtraining',
     icon: <AiOutline.AiOutlineTeam />,
     className: 'teamtraining',
+  },
+  {
+    title: 'Recording',
+    path: '/recording',
+    icon: <RemixIcon.RiTapeLine />,
+    className: 'recording',
   },
   {
     title: 'Musik',

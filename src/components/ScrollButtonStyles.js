@@ -20,7 +20,7 @@ export const Button = styled.div`
   width: 32px;
   height: 32px;
   color: rgba(61, 176, 153, 0.6);
-  font-size: 2rem;
+  font-size: 3rem;
   /* background-color: rgba(61, 176, 153, 0.3); */
 
   &:hover {

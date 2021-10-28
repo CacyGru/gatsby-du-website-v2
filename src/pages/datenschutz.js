@@ -8,7 +8,7 @@ const Datenschutz = () => {
     <Layout>
       <Seo title="Datenschutz" />
 
-      <div className="datenschutz" id="datenschutz">
+      <div className="flex" id="datenschutz">
         <div className="card-top">
           <h2>Datenschutz&shy;erkl&auml;rung</h2>
         </div>

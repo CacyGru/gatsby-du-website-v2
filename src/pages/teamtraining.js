@@ -58,7 +58,7 @@ const Teamtraining = () => {
 
           <div className="flex">
             <div>
-              <ul>
+              <ul className="bullet">
                 <li>
                   als lebendiger Abschluss, etwa an einen langen Seminartag
                 </li>
@@ -103,7 +103,7 @@ const Teamtraining = () => {
               <p>
                 Drum Up Teamtrainings fördern Teamfähigkeiten / Soft Skills wie
               </p>
-              <ul>
+              <ul className="bullet">
                 <li>Kreativität</li>
                 <li>
                   Kommunikative Kompetenz – zuhören, miteinander kommunizieren

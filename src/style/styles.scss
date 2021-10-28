@@ -61,6 +61,18 @@ body {
   align-items: center;
 }
 
+.flex {
+  display: flex;
+}
+
+.padding {
+  padding: 2rem;
+}
+
+.bullet li {
+  list-style-type: disc;
+}
+
 //card styling
 
 .card {
@@ -180,19 +192,6 @@ body {
   color: white;
   box-shadow: 2px 2px 4px rgb(61, 176, 153);
   text-shadow: 2px 2px 5px #2f8675;
-}
-
-.flex {
-  display: flex;
-}
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.padding {
-  padding: 2rem;
 }
 
 .datenschutz .card-content {

@@ -52,7 +52,7 @@ const contactForm = () => {
       validationSchema={validationSchema}
       onSubmit={onSubmit}
     >
-      <Form onSubmit={sendEmail}>
+      <Form className="center" onSubmit={sendEmail}>
         <div className="form-control">
           <label htmlFor="name">
             Name<sup>*</sup>

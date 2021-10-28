@@ -2,7 +2,7 @@ import React from 'react';
 
 const Unterricht3 = () => {
   return (
-    <div className="flex-column">
+    <div className="center">
       <h2>Online Unterricht</h2>
       <p>
         Hier geht es zum DSGVO konformen Online Unterricht von Drum UP. Hierfür
